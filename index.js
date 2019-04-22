@@ -1,14 +1,14 @@
 let count = 0
-
+const element = document.getElementById("counter")
 function increase(){
     count++
-    console.log(count)
+    element.innerText = count
 }
 function decrease(){
     count--
-    console.log(count)
+    element.innerText = count
 }
 function reset(){
     count = 0
-    console.log(count)
+    element.innerHTML = `<mark>${count}</mark>`
 }
